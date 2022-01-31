@@ -42,6 +42,8 @@
 }
 .ex-11-icon {
     font-size: 60px;
+    animation: partial-spin 2s infinite;
+    animation-timing-function: ease-in;
 }
 .ex-12-button, .ex-13-button {
     position: relative;
@@ -175,8 +177,43 @@
     } 
 }
 
+@keyframes partial-spin {
+    75% {
+        transform: rotate(270deg);
+    }
+}
 
+.ex-12-bottom-white {
+    animation: rectangular-spin-bottom 2s linear infinite;
+}
 
+@keyframes rectangular-spin-bottom {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+.ex-12-top-white {
+    animation: rectangular-spin-top 2s linear infinite;
+}
+
+@keyframes rectangular-spin-top {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
 
 
 

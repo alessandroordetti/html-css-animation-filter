@@ -108,3 +108,34 @@
     100% {
         opacity: 0;
     }
+}
+
+.ex-5-square {
+    transition: 3s;
+}
+
+.ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+}
+
+.ex-5-square:active {
+    width: 30px;
+    height: 30px;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(100%);
+}
+
+.ex-7-img {
+    transition: 3s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%);
+    border-radius: 10px;
+}
+
+
+

@@ -75,6 +75,10 @@
     height: 20px;
 }
 
+
+
+
+
 .ex-1-square:hover {
     background-color: red;
 }
@@ -89,7 +93,7 @@
 
 .ex-4-square:hover {
     animation-name: disappearing;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
 @keyframes disappearing {
@@ -119,13 +123,11 @@
 }
 
 .ex-5-square:hover {
-    width: 100px;
-    height: 100px;
+    transform: scale(2);
 }
 
 .ex-5-square:active {
-    width: 30px;
-    height: 30px;
+    transform: scale(1) ;
 }
 
 .ex-6-img:hover {
@@ -215,5 +217,12 @@
     }
 }
 
+.ex-13-bottom-white {
+    animation: rectangular-full-spin-top 2s linear infinite;
+}
+
+@rectangular-full-spin-top {
+
+}
 
 
